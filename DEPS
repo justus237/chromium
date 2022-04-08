@@ -820,7 +820,7 @@ deps = {
   },
 
   'src/net/third_party/quiche/src':
-    Var('quiche_git') + '/quiche.git' + '@' +  Var('quiche_revision'),
+    Var('quiche_git') + '/quiche.git',
 
   'src/testing/rts/linux-amd64': {
       'packages': [
