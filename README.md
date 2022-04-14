@@ -14,7 +14,7 @@ This repository has a modified DEP file that points to our own fork of quiche wi
 ```gclient sync --no-history```
 ### on Linux
 ```gclient sync --nohooks```
-(no history will fail because chromium devs are not interested in fixing shallow clones for one of their third party repositories)
+(no history will fail because chromium devs are not interested in fixing shallow clones for one of their third party repositories, see https://groups.google.com/a/chromium.org/g/chromium-dev/c/pRDAs6tm-Zs, https://bugs.chromium.org/p/chromium/issues/detail?id=1313310, https://bugs.chromium.org/p/chromium/issues/detail?id=1226496)
 
 
 # ![Logo](chrome/app/theme/chromium/product_logo_64.png) Chromium
