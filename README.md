@@ -1,3 +1,22 @@
+## How to fetch this:
+```
+gclient config --spec='solutions=[
+  {
+    "name":"src", 
+    "url":"https://github.com/justus237/chromium.git", 
+    "custom_deps":{},
+    "custom_vars": {},
+  },
+]'
+```
+This repository has a modified DEP file that points to our own fork of quiche without a specific commit hash, so that the latest version is always fetched. Note that this quiche fork still uses the old directory structure where everything is in net/third_party/quiche/src and not in net/third_party/quiche/src/quiche
+### on macOS:
+```gclient sync --no-history```
+### on Linux
+```gclient sync --nohooks```
+(no history will fail because chromium devs are not interested in fixing shallow clones for one of their third party repositories)
+
+
 # ![Logo](chrome/app/theme/chromium/product_logo_64.png) Chromium
 
 Chromium is an open-source browser project that aims to build a safer, faster,
