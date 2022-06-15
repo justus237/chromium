@@ -33,7 +33,7 @@ namespace net {
 namespace {
 
 // The maximum duration, in seconds, to keep used idle persistent sockets alive.
-int64_t g_used_idle_socket_timeout_s = 30;  // 5 minutes
+int64_t g_used_idle_socket_timeout_s = 300;  // 5 minutes
 
 // Invoked by the transport socket pool after host resolution is complete
 // to allow the connection to be aborted, if a matching SPDY session can
