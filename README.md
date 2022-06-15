@@ -20,10 +20,10 @@ This repository has a modified DEP file that points to our own fork of quiche wi
 ```gn gen out/Default```
 ```gn args out/Default```
 values to set:
-```symbol_level = 0
-is_debug=false
-enable_nacl=false
-dcheck_always_on=false```
+```symbol_level = 0```
+```is_debug=false```
+```enable_nacl=false```
+```dcheck_always_on=false```
 ```autoninja -C out/Default chrome```
 
 
