@@ -1,4 +1,4 @@
-## How to fetch this:
+## How to pull and compile this:
 Similar to the tutorial at https://chromium.googlesource.com/chromium/src/+/main/docs/linux/build_instructions.md
   - Install `depot_tools` (`git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git && export PATH="$PATH:${HOME}/depot_tools"`
   - Make a `chromium` directory: `mkdir ~/chromium && cd ~/chromium`
@@ -27,6 +27,9 @@ Similar to the tutorial at https://chromium.googlesource.com/chromium/src/+/main
       - ```dcheck_always_on=false```
   - ```autoninja -C out/Default chrome chromedriver```
 
+### Changes in this repository
+- `build/write_build_date_header.py` timestamps with the current date because it was breaking on the machines provided by the chair
+- DEPS is updated to point to `https://github.com/justus237/quiche`
 
 # ![Logo](chrome/app/theme/chromium/product_logo_64.png) Chromium
 
